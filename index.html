@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Rina Julianti — Web Designer & Developer</title>
+        
+        <!-- Tailwind CSS CDN -->
+        <script src="https://cdn.tailwindcss.com"></script>
+        
+        <!-- Boxicons -->
+        <link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+        
+        <!-- Google Fonts: DM Sans & Playfair Display -->
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+        
+        <script>
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        fontFamily: {
+                            sans: ['"DM Sans"', 'sans-serif'],
+                            serif: ['"Playfair Display"', 'serif'],
+                        },
+                        colors: {
+                            warmBg: '#F7F5F0',
+                            cardPure: '#FFFFFF',
+                            textMain: '#2C2A29',
+                            textMuted: '#736F6B',
+                            borderColor: '#E6E2D8',
+                            accentWarm: '#8C6D53',
+                        }
+                    }
+                }
+            }
+        </script>
+    </head>
+    <body class="bg-warmBg text-textMain font-sans antialiased selection:bg-accentWarm selection:text-white">
+
+        <!--===== HEADER =====-->
+        <header class="fixed top-0 left-0 w-full bg-warmBg/85 backdrop-blur-md border-b border-borderColor z-50">
+            <nav class="max-w-5xl mx-auto px-6 h-20 flex justify-between items-center">
+                <a href="#" class="font-serif text-lg font-bold tracking-tight text-textMain italic">
+                    Rina Julianti<span class="text-accentWarm">.</span>
+                </a>
+
+                <!-- Desktop Menu -->
+                <ul class="hidden md:flex space-x-8 text-xs font-semibold uppercase tracking-widest text-textMuted">
+                    <li><a href="#home" class="hover:text-textMain transition-colors">Home</a></li>
+                    <li><a href="#about" class="hover:text-textMain transition-colors">About</a></li>
+                    <li><a href="#skills" class="hover:text-textMain transition-colors">Skills</a></li>
+                    <li><a href="#work" class="hover:text-textMain transition-colors">Work</a></li>
+                    <li><a href="#contact" class="hover:text-textMain transition-colors">Contact</a></li>
+                </ul>
+
+                <a href="#contact" class="hidden md:inline-block text-[11px] font-semibold uppercase tracking-wider px-4 py-2 bg-textMain text-warmBg rounded-full hover:bg-accentWarm transition-all">
+                    Let's Talk
+                </a>
+
+                <!-- Mobile Toggle Button -->
+                <button id="nav-toggle" class="md:hidden text-2xl text-textMain focus:outline-none">
+                    <i class='bx bx-menu'></i>
+                </button>
+            </nav>
+        </header>
+
+        <main class="max-w-5xl mx-auto px-6 pt-32">
+            <!--===== HOME =====-->
+            <section id="home" class="min-h-[75vh] flex flex-col-reverse md:flex-row items-center justify-between gap-12 py-12 border-b border-borderColor">
+                <div class="space-y-5 text-center md:text-left flex-1">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 bg-white border border-borderColor rounded-full text-xs font-medium text-textMuted shadow-sm">
+                        <span class="w-1.5 h-1.5 rounded-full bg-accentWarm"></span> Creative Web Enthusiast
+                    </div>
+                    
+                    <h1 class="font-serif text-3xl md:text-5xl font-bold tracking-tight text-textMain leading-[1.2]">
+                        Web Designer <br>& Developer.
+                    </h1>
+
+                    <p class="text-textMuted text-sm md:text-base max-w-md font-light leading-relaxed">
+                        An Informatics Engineering student dedicated to designing digital interfaces that are functional, clean, and aesthetically pleasing.
+                    </p>
+
+                    <div class="flex items-center justify-center md:justify-start gap-3 pt-2">
+                        <!-- Tombol Explore GitHub dengan Nama -->
+                        <a href="https://github.com/rinaj9716" target="_blank" class="px-5 py-3 bg-textMain text-warmBg text-xs font-semibold uppercase tracking-wider rounded-xl hover:bg-accentWarm transition-all shadow-sm flex items-center gap-2">
+                            <i class='bx bxl-github text-base'></i> rinaj9716
+                        </a>
+                        
+                        <div class="flex items-center gap-2 pl-3 border-l border-borderColor">
+                            <a href="#" class="w-9 h-9 flex items-center justify-center rounded-xl bg-cardPure border border-borderColor text-textMain hover:bg-textMain hover:text-warmBg transition-all shadow-sm"><i class='bx bxl-linkedin text-base'></i></a>
+                            <a href="#" class="w-9 h-9 flex items-center justify-center rounded-xl bg-cardPure border border-borderColor text-textMain hover:bg-textMain hover:text-warmBg transition-all shadow-sm"><i class='bx bxl-behance text-base'></i></a>
+                            <a href="https://github.com/rinaj9716" target="_blank" class="w-9 h-9 flex items-center justify-center rounded-xl bg-cardPure border border-borderColor text-textMain hover:bg-textMain hover:text-warmBg transition-all shadow-sm" title="rinaj9716"><i class='bx bxl-github text-base'></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex-1 flex justify-center">
+                    <div class="w-56 h-56 md:w-72 md:h-72 rounded-3xl overflow-hidden border border-borderColor bg-cardPure shadow-sm p-2">
+                        <img src="assets/img/rina1.jpeg" alt="Rina Julianti" class="w-full h-full object-cover rounded-2xl grayscale hover:grayscale-0 hover:scale-105 transition-all duration-700">
+                    </div>
+                </div>
+            </section>
+
+            <!--===== ABOUT =====-->
+            <section id="about" class="py-20 border-b border-borderColor">
+                <div class="grid md:grid-cols-12 gap-10 items-center">
+                    <div class="md:col-span-5 rounded-3xl overflow-hidden border border-borderColor bg-cardPure p-2.5 shadow-sm h-72">
+                        <img src="assets/img/rina1.jpeg" alt="Rina Julianti" class="w-full h-full object-cover rounded-2xl grayscale hover:grayscale-0 hover:scale-105 transition-all duration-700">
+                    </div>
+                    
+                    <div class="md:col-span-7 space-y-5 bg-cardPure p-8 md:p-10 rounded-3xl border border-borderColor shadow-sm">
+                        <div>
+                            <span class="text-xs font-semibold uppercase tracking-widest text-accentWarm">Profile</span>
+                            <h2 class="font-serif text-2xl font-bold tracking-tight mt-1">Tentang Saya</h2>
+                        </div>
+                        <p class="text-textMuted text-sm leading-relaxed font-light">
+                            I am an Informatics Engineering student passionate about software development and visual design. I have a strong interest in creating functional applications and developing my programming skills to build innovative and user-friendly digital solutions.
+                        </p>
+                        <div class="grid grid-cols-2 gap-4 pt-3 border-t border-borderColor">
+                            <div>
+                                <h3 class="font-serif text-base font-bold">Informatics</h3>
+                                <p class="text-xs text-textMuted mt-0.5">Engineering Student</p>
+                            </div>
+                            <div>
+                                <h3 class="font-serif text-base font-bold">UI / Web</h3>
+                                <p class="text-xs text-textMuted mt-0.5">Design & Code</p>
+                            </div>
+                        </div>
+                    </div>                                   
+                </div>
+            </section>
+
+            <!--===== SKILLS =====-->
+            <section id="skills" class="py-20 border-b border-borderColor">
+                <div class="text-center max-w-xl mx-auto mb-12">
+                    <span class="text-xs font-semibold uppercase tracking-widest text-accentWarm">Expertise</span>
+                    <h2 class="font-serif text-2xl font-bold tracking-tight mt-1">Keahlian & Kemampuan</h2>
+                </div>
+
+                <div class="grid md:grid-cols-12 gap-8 items-center">          
+                    <div class="md:col-span-7 space-y-5 bg-cardPure p-8 md:p-9 rounded-3xl border border-borderColor shadow-sm">
+                        <h3 class="font-serif font-bold text-lg mb-3">Professional Skills</h3>
+                        
+                        <div class="space-y-1.5">
+                            <div class="flex justify-between items-center text-xs font-medium">
+                                <span class="flex items-center gap-2"><i class='bx bxl-html5 text-orange-600 text-base'></i> HTML5</span>
+                                <span class="text-textMuted">95%</span>
+                            </div>
+                            <div class="w-full bg-warmBg h-1.5 rounded-full overflow-hidden border border-borderColor">
+                                <div class="bg-accentWarm h-full rounded-full" style="width: 95%"></div>
+                            </div>
+                        </div>
+
+                        <div class="space-y-1.5">
+                            <div class="flex justify-between items-center text-xs font-medium">
+                                <span class="flex items-center gap-2"><i class='bx bxl-css3 text-blue-600 text-base'></i> CSS3</span>
+                                <span class="text-textMuted">85%</span>
+                            </div>
+                            <div class="w-full bg-warmBg h-1.5 rounded-full overflow-hidden border border-borderColor">
+                                <div class="bg-accentWarm h-full rounded-full" style="width: 85%"></div>
+                            </div>
+                        </div>
+
+                        <div class="space-y-1.5">
+                            <div class="flex justify-between items-center text-xs font-medium">
+                                <span class="flex items-center gap-2"><i class='bx bxl-javascript text-yellow-600 text-base'></i> JavaScript</span>
+                                <span class="text-textMuted">65%</span>
+                            </div>
+                            <div class="w-full bg-warmBg h-1.5 rounded-full overflow-hidden border border-borderColor">
+                                <div class="bg-accentWarm h-full rounded-full" style="width: 65%"></div>
+                            </div>
+                        </div>
+
+                        <div class="space-y-1.5">
+                            <div class="flex justify-between items-center text-xs font-medium">
+                                <span class="flex items-center gap-2"><i class='bx bxs-paint text-purple-600 text-base'></i> UI/UX Design</span>
+                                <span class="text-textMuted">85%</span>
+                            </div>
+                            <div class="w-full bg-warmBg h-1.5 rounded-full overflow-hidden border border-borderColor">
+                                <div class="bg-accentWarm h-full rounded-full" style="width: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="md:col-span-5 rounded-3xl overflow-hidden border border-borderColor bg-cardPure p-2.5 shadow-sm h-72">              
+                        <img src="assets/img/skill.jpeg" alt="Skills" class="w-full h-full object-cover rounded-2xl grayscale hover:grayscale-0 hover:scale-105 transition-all duration-700">
+                    </div>
+                </div>
+            </section>
+
+            <!--===== WORK =====-->
+            <section id="work" class="py-20 border-b border-borderColor">
+                <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+                    <div>
+                        <span class="text-xs font-semibold uppercase tracking-widest text-accentWarm">Portfolio</span>
+                        <h2 class="font-serif text-2xl font-bold tracking-tight mt-1">College Activities</h2>
+                    </div>
+                </div>
+
+                <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-5">
+                    <div class="group relative rounded-2xl overflow-hidden border border-borderColor bg-cardPure p-2 shadow-sm aspect-video">
+                        <img src="assets/img/random5.jpeg" alt="Proyek 1" class="w-full h-full object-cover rounded-xl grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-500">
+                    </div>
+                    <div class="group relative rounded-2xl overflow-hidden border border-borderColor bg-cardPure p-2 shadow-sm aspect-video">
+                        <img src="assets/img/random6.jpeg" alt="Proyek 2" class="w-full h-full object-cover rounded-xl grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-500">
+                    </div>
+                    <div class="group relative rounded-2xl overflow-hidden border border-borderColor bg-cardPure p-2 shadow-sm aspect-video">
+                        <img src="assets/img/random1.jpeg" alt="Proyek 3" class="w-full h-full object-cover rounded-xl grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-500">
+                    </div>
+                    <div class="group relative rounded-2xl overflow-hidden border border-borderColor bg-cardPure p-2 shadow-sm aspect-video">
+                        <img src="assets/img/random4.jpeg" alt="Proyek 4" class="w-full h-full object-cover rounded-xl grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-500">
+                    </div>
+                    <div class="group relative rounded-2xl overflow-hidden border border-borderColor bg-cardPure p-2 shadow-sm aspect-video">
+                        <img src="assets/img/random2.jpeg" alt="Proyek 5" class="w-full h-full object-cover rounded-xl grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-500">
+                    </div>
+                    <div class="group relative rounded-2xl overflow-hidden border border-borderColor bg-cardPure p-2 shadow-sm aspect-video">
+                        <img src="assets/img/random3.jpeg" alt="Proyek 6" class="w-full h-full object-cover rounded-xl grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-500">
+                    </div>
+                </div>
+            </section>
+
+            <!--===== CONTACT =====-->
+            <section id="contact" class="py-20">
+                <div class="text-center max-w-xl mx-auto mb-12">
+                    <span class="text-xs font-semibold uppercase tracking-widest text-accentWarm">Get in Touch</span>
+                    <h2 class="font-serif text-2xl font-bold tracking-tight mt-1">Hubungi Saya</h2>
+                </div>
+
+                <div class="max-w-md mx-auto bg-cardPure p-8 rounded-3xl border border-borderColor shadow-sm">
+                    <form action="" class="space-y-4">
+                        <div>
+                            <label class="block text-xs font-semibold uppercase tracking-wider text-textMuted mb-1.5">Nama Lengkap</label>
+                            <input type="text" placeholder="Masukkan nama Anda" class="w-full px-3.5 py-3 bg-warmBg border border-borderColor rounded-xl text-xs focus:outline-none focus:border-accentWarm transition-colors">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold uppercase tracking-wider text-textMuted mb-1.5">Alamat Email</label>
+                            <input type="email" placeholder="nama@email.com" class="w-full px-3.5 py-3 bg-warmBg border border-borderColor rounded-xl text-xs focus:outline-none focus:border-accentWarm transition-colors">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold uppercase tracking-wider text-textMuted mb-1.5">Pesan</label>
+                            <textarea rows="3" placeholder="Tuliskan pesan Anda di sini..." class="w-full px-3.5 py-3 bg-warmBg border border-borderColor rounded-xl text-xs focus:outline-none focus:border-accentWarm transition-colors"></textarea>
+                        </div>
+                        <button type="button" class="w-full py-3 bg-textMain text-warmBg text-xs font-bold uppercase tracking-widest rounded-xl hover:bg-accentWarm transition-all shadow-sm">
+                            Kirim Pesan
+                        </button>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <!--===== FOOTER =====-->
+        <footer class="border-t border-borderColor py-10 bg-cardPure">
+            <div class="max-w-5xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="font-serif text-sm font-bold italic text-textMain">Rina Julianti</p>
+                
+                <div class="flex items-center gap-3">
+                    <div class="flex space-x-2.5">
+                        <a href="#" class="w-8 h-8 flex items-center justify-center rounded-xl border border-borderColor text-textMain hover:bg-textMain hover:text-warmBg transition-all shadow-sm"><i class='bx bxl-facebook text-sm'></i></a>
+                        <a href="#" class="w-8 h-8 flex items-center justify-center rounded-xl border border-borderColor text-textMain hover:bg-textMain hover:text-warmBg transition-all shadow-sm"><i class='bx bxl-instagram text-sm'></i></a>
+                        <a href="https://github.com/rinaj9716" target="_blank" class="w-8 h-8 flex items-center justify-center rounded-xl border border-borderColor text-textMain hover:bg-textMain hover:text-warmBg transition-all shadow-sm"><i class='bx bxl-github text-sm'></i></a>
+                    </div>
+                    <span class="text-xs font-medium text-textMuted">github.com/rinaj9716</span>
+                </div>
+
+                <p class="text-[11px] text-textMuted">&#169; Rina Julianti. All rights reserved.</p>
+            </div>
+        </footer>
+
+        <!--===== MAIN JS =====-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
